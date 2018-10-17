@@ -28,7 +28,7 @@ class Signup extends Component{
         if (signup.password !== signup.password2){
             return toastr.error('No coinciden las contraseñas')
         }
-        axios.post('https://endlessmemory.herokuapp.com//signup', signup)
+        axios.post('http://localhost:3000/signup', signup)
         .then(user=>{
             console.log(user)
             toastr.success('Usuario Creado')

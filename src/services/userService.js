@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = "https://endlessmemory.herokuapp.com//"
+const url = "http://localhost:3000/"
 
 export const getUserData = (id) =>{
      axios.get(url + 'profile' + id,{

@@ -32,7 +32,7 @@ class EndlessImg extends Component{
         for(let key in img){
             form.append(key,img[key])
         }
-        axios.post('https://endlessmemory.herokuapp.com//pictures', form, {
+        axios.post('http://localhost:3000/pictures', form, {
             headers :{
                 "Authorization": localStorage.getItem('token')
             }
@@ -52,7 +52,7 @@ class EndlessImg extends Component{
             form.append(key,img[key])
         }
         console.log(img, form)
-        fetch('https://endlessmemory.herokuapp.com//pictures',{
+        fetch('http://localhost:3000/pictures',{
             method : "post",
             body:JSON.stringify(form),
             headers :{

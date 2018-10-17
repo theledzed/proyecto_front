@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const url = 'https://endlessmemory.herokuapp.com//login'
+const url = 'http://localhost:3000/login'
 
 class Login extends Component{
     state={

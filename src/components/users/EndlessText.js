@@ -32,7 +32,7 @@ class EndlessText extends Component{
         e.preventDefault()
         const {txt} = this.state
         console.log(txt)
-        fetch('https://endlessmemory.herokuapp.com//text',{
+        fetch('http://localhost:3000/text',{
             method: "POST",
             headers:{
                 "Content-Type": "application/json",
